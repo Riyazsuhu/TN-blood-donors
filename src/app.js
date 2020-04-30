@@ -44,7 +44,20 @@ app.get('/donarregistration',(req,res) =>{
 })
 //donar's details route
 app.get('/donardata',(req,res) =>{
-    res.render('donardata')
+    res.render('donardata',{
+        dnr1:{
+            dnr_name: 'M.Mohamed asik',
+            bld_grp: '0+ve',
+            mob_num: +919080500125,
+            dnr_taluk: 'Needamangalam'
+        },
+        dnr2:{
+            dnr_name: 'H.Riyaz ahmed',
+            bld_grp: 'A+ve',
+            mob_num: +919500665156,
+            dnr_taluk: 'chidhambaram'
+        }
+    })
 })
 //RESTful API to serving data to donars data route
 app.get('API',(req,res)=>{

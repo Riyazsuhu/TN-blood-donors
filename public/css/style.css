@@ -45,19 +45,47 @@ nav ul li {
 }
 .main-content{
     flex-grow:1;
+    width: 80vw;
 }
 .image{
     width: 200px;
 }
 
 #form{
-    width: 80vw;
-    margin: 0 auto; 
+    width: 30vw;
+    background-image: radial-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.001));
+    border-radius: 10px;
 }
 button{
-    width: 5%;
+    width: 20%;
+    font-size: 0.5em;
 }
-
+select:nth-child(2){
+    width: 35%;
+    font-size: 0.5em;
+}
+#taluk{
+    width: 25%;
+    font-size: 0.5em;
+}
+label{
+    font-size: 0.8em;
+}
+input{
+    width: 40%;
+    font-size: 0.5em;
+}
+#box{
+    background-color: rgba(195, 177, 75, 0.9);
+    width: 60%;
+}
+table{
+    border: none;
+    font-size: 0.6em;
+    width:100%;
+    margin-bottom: 3%;
+    padding: 5%;
+}
 footer{
 color:#a89f9f;
 border-top:1px solid #9b9797;
@@ -68,6 +96,11 @@ header{
     color:#383d3a;
     margin-top: 16px;
     margin-bottom:30px;
+}
+header h3{
+    background: linear-gradient(to right, #d46767, #bd9393);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 header a{
     text-decoration:none;

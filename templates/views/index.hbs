@@ -15,6 +15,7 @@
         <form action="">
             <label for="blood group">Blood Group : </label>
             <select name="blood_group" id="bld_grp">
+                <option value="bld_grp" selected disabled>Select blood group</option>
                 <option value="A+">A+</option>
                 <option value="A-">A-</option>
                 <option value="A1+">A1+</option>
@@ -34,7 +35,7 @@
             </select><br>
             <label for="taluk">Taluk : </label>
             <select name="taluk" id="taluk">
-                <option value="select taluk" selected>Select Taluk</option>
+                <option value="select taluk" selected disabled>Select Taluk</option>
                 <option value="Agasteeswaram">Agasteeswaram</option>
                 <option value="Alandur">Alandur</option>
                 <option value="Alangudi">Alangudi</option>
@@ -74,7 +75,7 @@
                 <option value="Chinnaselam">Chinnaselam</option>
                 <option value="Cheranmahadevi">Cheranmahadevi</option>
                 <option value="Chetpet">Chetpet</option>
-                <option value="Cheyyur">cheyyur</option>
+                <option value="Cheyyur">Cheyyur</option>
                 <option value="Coimbatore(North)">Coimbatore(North)</option>
                 <option value="Coimbatore(South)">Coimbatore(South)</option>
                 <option value="Coonoor"> Coonoor</option>
@@ -341,11 +342,12 @@
                 <option value="Yercaud">Yercaud</option>
             </select>
             <br>
-            <button>Submit</button>
+            <center><button style="height: 30px;">Search</button></center>
         </form>
     </div>
     </div>
     {{>footer}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js" integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
 </body>
 </html>

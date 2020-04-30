@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js",
+    "run": "nodemon src/app.js -e hbs,js,css"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "hbs": "^4.1.1",
+    "nodemon": "^2.0.3",
     "request": "^2.88.2"
   }
 }

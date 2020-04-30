@@ -52,8 +52,10 @@ nav ul li {
 
 #form{
     width: 80vw;
-    margin: 0 auto;
-    
+    margin: 0 auto; 
+}
+button{
+    width: 5%;
 }
 
 footer{

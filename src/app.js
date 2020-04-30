@@ -2,6 +2,7 @@
 const path=require('path')
 const hbs=require('hbs')
 const express=require('express')
+const port = process.env.PORT || 3000
 const app=express()
 const log=console.log
 //path setup for external services
@@ -56,6 +57,6 @@ app.get('*',(req, res)=>{
         errormessage:'Page not found.'
     })
 })
-app.listen(3000,()=>{
-    log('Blood donar server is started server is stated')
+app.listen(port,()=>{
+    log('Blood donar server is started on port', port)
 })

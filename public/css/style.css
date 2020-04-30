@@ -1,0 +1,33 @@
+body,html{
+    margin:0 auto;
+    color:#121212;
+    font-family:arial;
+    font-size:40px;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+}
+.main-content{
+    flex-grow:1;
+}
+.image{
+    width: 200px;
+}
+footer{
+color:#a89f9f;
+border-top:1px solid #9b9797;
+font-size: 30px;
+padding-bottom: 30px;
+}
+header{
+    color:#383d3a;
+    margin-top: 16px;
+    margin-bottom:30px;
+}
+header a{
+    text-decoration:none;
+    color:#8f8a8a;
+    font-size:25px;
+}

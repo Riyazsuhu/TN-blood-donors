@@ -7,22 +7,27 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <div class="main-content">
     {{>header}}
+    <div class="main-content">
+    
+    
+    <div id="form">
+        <form action="">
+            <label for="blood group">Blood Group : </label>
+            <select name="blood group" id="bld_grp">
+                <option value="b1">A1+</option>
+                <option value="b2">A1</option>
+            </select><br>
+            <label for="taluk">Taluk : </label>
+            <select name="taluk" id="taluk">
+                <option value="chidambaram">Chidambaram</option>
+                <option value="nidamangalam">Nidamangalam</option>
+            </select>
+            <br>
+            <button>Submit</button>
+        </form>
     </div>
-    <form action="">
-        <label for="blood group">Blood Group : </label>
-        <select name="blood group" id="bld_grp">
-            <option value="b1">A1+</option>
-            <option value="b2">A1</option>
-        </select>
-        <label for="taluk">Taluk : </label>
-        <select name="taluk" id="taluk">
-            <option value="chidambaram">Chidambaram</option>
-            <option value="nidamangalam">Nidamangalam</option>
-        </select>
-        <button>Submit</button>
-    </form>
+    </div>
     {{>footer}}
     <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js" integrity="sha256-MlusDLJIP1GRgLrOflUQtshyP0TwT/RHXsI1wWGnQhs=" crossorigin="anonymous"></script>
 </body>

@@ -7,26 +7,29 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <div class="main-content">
     {{>header}}
+
+    <div class="main-content">
+        <div id="form">
+            <form action="">
+                <label for="dnr_name">Name : </label>
+                <input type="text" name="dnr_name" required><br>
+                <label for="mobile_no">Mobile No : <b>+91</b> </label>
+                <input type="number" name="mobile_no" required pattern="[1-9]{1}[0-9]{9}"><br>
+                <label for="bld_group">Blood Group : </label>
+                <select name="bld_group" id="">
+                    <option value="A1+">A1+</option>
+                    <option value="A1">A1</option>
+                </select><br>
+                <label for="taluk">Taluk : </label>
+                <select name="taluk" id="">
+                    <option value="Chidambaram">Chidambaram</option>
+                    <option value="Nidamangalam">Nidamangalam</option>
+                </select><br>
+                <button>Submit</button>
+            </form>
+        </div>
     </div>
-    <form action="">
-        <label for="dnr_name">Name : </label>
-        <input type="text" name="dnr_name" required>
-        <label for="mobile_no">Mobile No : <b>+91</b> </label>
-        <input type="number" name="mobile_no" required pattern="[1-9]{1}[0-9]{9}">
-        <label for="bld_group">Blood Group : </label>
-        <select name="bld_group" id="">
-            <option value="A1+">A1+</option>
-            <option value="A1">A1</option>
-        </select>
-        <label for="taluk">Taluk : </label>
-        <select name="taluk" id="">
-            <option value="Chidambaram">Chidambaram</option>
-            <option value="Nidamangalam">Nidamangalam</option>
-        </select>
-        <button>Submit</button>
-    </form>
     {{>footer}}
 </body>
 </html>

@@ -1,46 +1,45 @@
 body{
     margin:0 auto;
-    color:#121212;
-    font-family: 'Podkova', serif;
-    font-size:40px;
-    padding: 16px;
-    background-image: linear-gradient(to bottom, rgb(189, 84, 84), white);
-    width: 50vw;
-
-    display: flex;
-    flex-direction: column;
-    min-height:100vh;
 }
-nav {
-    height: 8vh;
-    position: relative;
-    display: inline-flex;
+--navbar--
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    background-size: cover ;
+    }
+.carousel-caption{
+    bottom: 220px;
+}
+.carousel-caption h5{
+    font-size: 7vh;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 25px;
+}
+.cimg{
+    height: 100vh;
     width: 100%;
 }
-nav div {
-    justify-content: center;
-    align-items: center;
+.navbar-nav a{
+    font-family: poppins;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
-nav div #logo{
-    cursor: pointer;
-    position: absolute;
-    height: 50%;
-    margin: 5% auto;
-    font-size: 1.2em;
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active{
+    color: #5a5050;
 }
-nav ul{
-    width: 100%;
-    padding-left: 40%;
+.navbar-nav{
+    text-align: center;
 }
-nav ul li {
-    float: right;
-    font-size: 16px;
-    list-style: none;
-    margin: 15px;
+.nav-link{
+    padding: .2rem 1rem;
 }
-#link:hover{
-    color: #eeeeee;
+#hover:hover{
+    color:#EB3325;
 }
+--navbarend--
 .main-content{
     flex-grow:1;
     width: 80vw;
@@ -86,21 +85,6 @@ table{
     padding: 5%;
 }
 
-header{
-    color:#383d3a;
-    margin-top: 16px;
-    margin-bottom:30px;
-}
-header h3{
-    background: linear-gradient(to right, #d46767, #bd9393);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-header a{
-    text-decoration:none;
-    color:#8f8a8a;
-    font-size:25px;
-}
 footer{
     color:#a89f9f;
     border-top:1px solid #9b9797;
@@ -108,3 +92,7 @@ footer{
     padding-bottom: 30px;
     text-align: center;
     }
+#logo{
+    width:10.5vh;  
+    height:8.5vh;
+}

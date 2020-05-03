@@ -9,16 +9,27 @@
 <body>
     {{>header}}
     <div class="main-content">
-    
-        <h5>Details about website</h5>
-        <h3>Developer 1</h3>
-        <h5>Name : {{name}}</h5>
-        <h5>Mobile No : {{mobileno}}</h5>
-        <h5>Location : {{location}}</h5>
-        <h3>Developer 2</h3>
-        <h5>Name : {{name1}}</h5>
-        <h5>Mobile No:{{mobileno1}}</h5>
-        <h5></h5>Location : {{location1}}</h5>
+        <section>
+            <h3>Details about website</h3>
+            <div class="container">
+                <div class="jumbotron devinfo">
+                    <h3>Developer 1</h3>
+                    <hr>
+                    <h5>Name : {{name}}</h5>
+                    <h5>Mobile No : {{mobileno}}</h5>
+                    <h5>Location : {{location}}</h5>
+                </div>
+            </div>
+            <div class="container">
+                <div class="jumbotron devinfo">
+                    <h3>Developer 2</h3>
+                    <hr>
+                    <h5>Name : {{name1}}</h5>
+                    <h5>Mobile No:{{mobileno1}}</h5>
+                    <h5>Location : {{location1}}</h5>
+                </div>
+            </div>
+        </section>
     </div>
     {{>footer}}
 </body>

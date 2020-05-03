@@ -13,39 +13,25 @@
 <body>
     {{>header}}
     <div class="main-content">
-    <h6>Donar lists:</h1>
-        <div id="box">
-            <table>
-                <tr>
-                    <td>Name:</td><td>{{dnr1.dnr_name}}</td>
-                </tr>
-                <tr>
-                    <td>Blood group:</td><td>{{dnr1.bld_grp}}</td>
-                </tr>
-                <tr>
-                    <td>Phone:</td><td>{{dnr1.mob_num}}</td>
-                </tr>
-                <tr>
-                    <td>Taluk:</td><td>{{dnr1.dnr_taluk}}</td>
-                </tr>
-            </table>
-        </div>
-        <div id="box">
-             <table>
-                <tr>
-                    <td>Name:</td><td>{{dnr2.dnr_name}}</td>
-                </tr>
-                <tr>
-                    <td>Blood group:</td><td>{{dnr2.bld_grp}}</td>
-                </tr>
-                <tr>
-                    <td>Phone:</td><td>{{dnr2.mob_num}}</td>
-                </tr>
-                <tr>
-                    <td>Taluk:</td><td>{{dnr2.dnr_taluk}}</td>
-                </tr>
-            </table>
-        </div>
+        <section>
+            <h6>Donar lists:</h6>
+            <div id="box">
+                <table>
+                    <tr><td>Name:</td><td>{{dnr1.dnr_name}}</td></tr>
+                    <tr><td>Blood group:</td><td>{{dnr1.bld_grp}}</td></tr>
+                    <tr><td>Phone:</td><td>{{dnr1.mob_num}}</td></tr>
+                    <tr><td>Taluk:</td><td>{{dnr1.dnr_taluk}}</td></tr>
+                </table>
+            </div>
+            <div id="box">
+                <table>
+                    <tr><td>Name:</td><td>{{dnr2.dnr_name}}</td></tr>
+                    <tr><td>Blood group:</td><td>{{dnr2.bld_grp}}</td></tr>
+                    <tr><td>Phone:</td><td>{{dnr2.mob_num}}</td></tr>
+                    <tr><td>Taluk:</td><td>{{dnr2.dnr_taluk}}</td></tr>
+                </table>
+            </div>
+        </section>
     </div>
     {{>footer}}
 </body>

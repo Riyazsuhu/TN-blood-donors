@@ -1,6 +1,5 @@
 body,html{
-    margin:0;
-    padding: 0;
+    padding-top: 40px;
 }
 /* --navbar-- */
 #logo{
@@ -8,22 +7,22 @@ body,html{
     height:8.5vh;
 }
 .carousel-item{
-    height: 100vh;
+    height: 90vh;
     min-height: 300px;
     background: no-repeat center center scroll;
     background-size: cover ;
 }
 .carousel-caption{
-    bottom: 220px;
+    bottom: 245px;
 }
 .carousel-caption h5{
-    font-size: 7vh;
+    font-size: 5.2vh;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 25px;
+    letter-spacing: .5px;
+    margin-top: 20px;
 }
 .cimg{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
 }
 .navbar-nav a{
@@ -54,7 +53,6 @@ body,html{
 }
 section{
     height: 95vh;
-    padding-top: 11vh;
     position: relative;
 }
 .section1{
@@ -85,7 +83,6 @@ section{
 /* form */
 form{
     font-family: 'Podkova', 'serif';
-    margin-top: 100px;
 }
 label{
     font-size: 1.3em;
@@ -127,3 +124,20 @@ footer{
     text-align: center;
     width: 100vw;
     }
+.jumbotron.form{
+    background-color: rgb(171, 215, 230);
+    margin: 5vh auto;
+}
+.jumbotron.text{
+    background-color: #60CA98;
+    margin: 5vh auto;
+    color: white;
+}
+.heading{
+    font-size: 7vh;
+}
+.content{
+    font-size: 3vh;
+    font-weight: 500;
+    list-style: none;
+}

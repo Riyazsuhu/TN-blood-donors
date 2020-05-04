@@ -5,24 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="icon" href="/img/icon.png">
-    <title>Donar registration</title>
+    <title>Donor registration</title>
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kavivanar&family=Podkova&display=swap" rel="stylesheet">
     
 </head>
 <body>
     {{>header}}   
+  <div class="jumbotron jumbotron-fluid text" style="color:cornsilk; background-color:#DE3027;">
+  <div class="container">
+  <h1 class="display-8 text-center text-weight-bold">ஒவ்வொருத் துளி இரத்தம் நாம் சேர்ப்போம் ஒருக்கிணைந்து பல உயிர் நாம் காப்போம்...</h1>
+  </div>
+  </div>
     <div class="main-content">
       <section>
         <form>
-          <div class="form-group container jumbotron">
+          <div class="form-group container jumbotron form">
+          <h1 style="font-weight:bold;" class="text-center">Donor's registration</h1>
             <label for="dnr_name">Full name : </label>
-            <input type="text" name="dnr_name" required class="form-control" placeholder="Full name"><br>
+            <input type="text" name="dnr_name" required class="form-control" placeholder="Enter your name"><br>
             <label for="mobile_no">Mobile No :</label>
-            <input type="number" name="mobile_no" required pattern="[1-9]{1}[0-9]{9}" class="form-control" placeholder="Mobile no"><br>
+            <input type="number" name="mobile_no" required pattern="[1-9]{1}[0-9]{9}" class="form-control" placeholder="Enter your Mobile no"><br>
             <label for="bld_group">Blood Group : </label>
             <select name="dnr_bld_group" id="dnr_bld_grp" class="form-control">
-              <option value="bld_grp" selected disabled>Select blood group</option>
+              <option value="bld_grp" selected disabled>Select your blood group</option>
               <option value="A+">A+</option>
               <option value="A-">A-</option>
               <option value="A1+">A1+</option>
@@ -42,7 +48,7 @@
             </select><br>
             <label for="taluk">Taluk : </label>
             <select name="taluk" id="dnr_taluk" class="form-control">
-              <option value="select taluk" selected disabled>Select Taluk</option>
+              <option value="select taluk" selected disabled>Select your Taluk</option>
               <option value="Agasteeswaram">Agasteeswaram</option>
               <option value="Alandur">Alandur</option>
               <option value="Alangudi">Alangudi</option>
@@ -348,7 +354,7 @@
               <option value="Watrap">Watrap</option>
               <option value="Yercaud">Yercaud</option>
             </select><br>
-            <center><button type="button" class="btn btn-light">Submit</button></center>
+            <center><button type="button" class="btn btn-primary btn-lg text-weight-bold">Submit</button></center>
           </div>
         </form>
       </section>

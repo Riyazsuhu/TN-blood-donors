@@ -39,12 +39,12 @@ app.get('/about',(req,res)=>{
     })
 })
 //donar registration route
-app.get('/donarregistration',(req,res) =>{
-    res.render('donarreg')
+app.get('/donorregistration',(req,res) =>{
+    res.render('donorreg')
 })
 //donar's details route
-app.get('/donardata',(req,res) =>{
-    res.render('donardata',{
+app.get('/donordata',(req,res) =>{
+    res.render('donordata',{
         dnr1:{
             dnr_name: 'M.Mohamed asik',
             bld_grp: '0+ve',
@@ -71,5 +71,5 @@ app.get('*',(req, res)=>{
     })
 })
 app.listen(port,()=>{
-    log('Blood donar server is started on port', port)
+    log('Blood donor server is started on port', port)
 })

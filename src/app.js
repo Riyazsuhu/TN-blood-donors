@@ -30,12 +30,16 @@ app.get('/donateus',(req,res)=>{
 app.get('/about',(req,res)=>{
     res.render('about',{
         title:'About',
-        name:'Riyaz ahmed',
-        location:'Parangipettai',
-        mobileno:'+919500665156',
-        name1:'Mohamed aasik',
-        location1:'Nidamangalam',
-        mobileno1:'+919080500125'
+        dev1:{
+            dev_name: 'M.Mohamed asik',
+            dev_mob_num: +919080500125,
+            dev_location: 'Needamangalam'
+        },
+        dev2:{
+            dev_name: 'H.Riyaz ahmed',
+            dev_mob_num: +919500665156,
+            dev_location: 'chidhambaram'
+        }
     })
 })
 //donar registration route

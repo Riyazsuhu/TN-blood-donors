@@ -12,25 +12,50 @@
         <section>
             <h3>Details about website</h3>
             <div class="container">
-                <div class="jumbotron devinfo">
-                    <h3>Developer 1</h3>
-                    <hr>
-                    <h5>Name : {{name}}</h5>
-                    <h5>Mobile No : {{mobileno}}</h5>
-                    <h5>Location : {{location}}</h5>
+                <div class="row">
+                    <div class="col">
+                        <div class="card mb-3" style="max-width: 70%; margin:10%">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="/img/riyaz.jpg" class="card-img" alt="..." style="height:100%; background-size:contain;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Developer 1</h5>
+                                        <p class="card-text">Name : {{dev2.dev_name}}</p>
+                                        <p class="card-text">Mobile No : {{dev2.dev_mob_num}}</p>
+                                        <p class="card-text">Location : {{dev2.dev_location}}</p>
+                                        <p class="card-text"><small class="text-muted">Software Engineer</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="jumbotron devinfo">
-                    <h3>Developer 2</h3>
-                    <hr>
-                    <h5>Name : {{name1}}</h5>
-                    <h5>Mobile No:{{mobileno1}}</h5>
-                    <h5>Location : {{location1}}</h5>
+                <div class="row">
+                    <div class="col">
+                        <div class="card mb-3" style="max-width: 70%; margin:10%">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="/img/aashik.jpg" class="card-img" alt="..." style="height:100%;">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Developer 2</h5>
+                                        <p class="card-text">Name : {{dev1.dev_name}}</p>
+                                        <p class="card-text">Mobile No : {{dev1.dev_mob_num}}</p>
+                                        <p class="card-text">Location : {{dev1.dev_location}}</p>
+                                        <p class="card-text"><small class="text-muted">Software Engineer</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
-        </section>
-    </div>
+            
+           
     {{>footer}}
 </body>
 </html>

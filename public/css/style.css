@@ -2,6 +2,10 @@ body,html{
     padding-top: 40px;
 }
 /* --navbar-- */
+.curve{
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}  
 #logo{
     width:10.5vh;  
     height:8.5vh;
@@ -47,40 +51,74 @@ body,html{
 
 /* page-layout */
 .main-content{
-    flex-grow:1;
+    /* flex-grow:1; */
     width: 100vw;
     height: 100%;
 }
 section{
     height: 95vh;
+    margin-top: 5%;
     position: relative;
 }
-.section1{
+#section1{
     height: 100vh;
 }
 .container{
     font-family: 'podkova', 'serif';
     position: relative;
 }
-.error-page{
-    width: 50vw;
-    height: 45vh;
-    margin-top: 15%;
+.bg-img{
+    background-image: url('/img/img.png');
 }
-.error-message{
-    margin: auto;
-    width: 70%;
-    height: 50%;
-    margin-top: 20%;
-
-}
-
 .devinfo{
     padding-top: 5px;
     background: linear-gradient(to bottom, rgba(161, 1, 1, 0.5), rgb(255, 255, 255));
 }
 
+.error-div {
+    padding: 5rem 3rem;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+    height: 100%;
+    padding-top: 10%;
+    width:80vw;
+    color: white;
+    font-family:'podkova';
+  }
+  .error-msg h1{
+    font-size: 10em;
+  }
+  .error-msg h3{
+    font-size: 6em;
+  }
+  @media (max-width: 576px) {
+    .error-div {
+      padding: 4rem 2rem;
+    }
+    .error-msg h1{
+        font-size: 6em;
+      }
+      .error-msg h3{
+        font-size: 4em;
+      }
+  }
+.jumbotron.text{
+    background-color: #e4281b;
+    margin: 5vh auto;
+    color: white;
+}
+.content{
+    font-size: 3vh;
+    font-weight: 500;
+}
+.content .ul{
+    margin-left: 20%;
+}
 /* form */
+.jumbotron.form{
+    background-color: rgb(171, 215, 230);
+    margin: 5vh auto;
+}
 form{
     font-family: 'Podkova', 'serif';
 }
@@ -88,10 +126,9 @@ label{
     font-size: 1.3em;
 }
 /* donardata */
-#box{
-    background-color: rgba(195, 177, 75, 0.9);
-    width: 70%;
-    margin: auto;
+.space{
+    margin-bottom: 5%;
+
 }
 table{
     border: none;
@@ -100,7 +137,6 @@ table{
     margin: auto;
     align-items: center;
     padding: 5%;
-    margin-bottom: 5%;
 }
 /* size */
 h3{
@@ -115,29 +151,25 @@ h6{
 hr{
     color: rgb(195, 71, 49);
 }
-/* footer */
-footer{
-    color:#a89f9f;
-    border-top:1px solid #9b9797;
-    font-size: 20px;
-    padding-bottom: 30px;
-    text-align: center;
-    width: 100vw;
-    }
-.jumbotron.form{
-    background-color: rgb(171, 215, 230);
-    margin: 5vh auto;
-}
-.jumbotron.text{
-    background-color: #60CA98;
-    margin: 5vh auto;
-    color: white;
-}
 .heading{
     font-size: 7vh;
 }
-.content{
-    font-size: 3vh;
-    font-weight: 500;
-    list-style: none;
+
+
+/* footer */
+footer{
+    background-blend-mode: overlay;
+    background-image: url("/img/bg1.jpg");
+    background-color: rgba(235, 51, 37, 0.81);
+    color:#a89f9f;
+    border-top:1px solid #9b9797;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    font-size: 20px;
+    padding: 30px;
+    text-align: center;
+    width: 100vw;
 }
+
+
+/* #60CA98 */

@@ -13,10 +13,13 @@
 <body>
     {{>header}}
     <div class="main-content">
-        <section>
-            <div class="container error-page">
-                <div class="error-message">
-                    <h1>404</h1><h3>{{errormessage}}</h3>
+        <section id="section1">
+        <img src="/img/error.jpg" alt="error" class="img-fluid" style="position: absolute;width: 100vw;height:80%">
+            <div class="text-center error-div">
+                <div class="row">
+                    <div class="col error-msg">
+                        <h1>404</h1><h3>{{errormessage}}</h3>
+                    </div>
                 </div>
             </div>
         </section>

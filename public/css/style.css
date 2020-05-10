@@ -1,5 +1,5 @@
 body,html{
-    padding-top: 40px;
+    padding-top: 15px;
 }
 /* --navbar-- */
 .curve{
@@ -51,7 +51,6 @@ body,html{
 
 /* page-layout */
 .main-content{
-    /* flex-grow:1; */
     width: 100vw;
     height: 100%;
 }
@@ -69,10 +68,6 @@ section{
 }
 .bg-img{
     background-image: url('/img/img.png');
-}
-.devinfo{
-    padding-top: 5px;
-    background: linear-gradient(to bottom, rgba(161, 1, 1, 0.5), rgb(255, 255, 255));
 }
 
 .error-div {
@@ -103,7 +98,7 @@ section{
       }
   }
 .jumbotron.text{
-    background-color: #e4281b;
+    background-color: #60CA98;
     margin: 5vh auto;
     color: white;
 }
@@ -158,18 +153,44 @@ hr{
 
 /* footer */
 footer{
+    position: cover;
     background-blend-mode: overlay;
-    background-image: url("/img/bg1.jpg");
-    background-color: rgba(235, 51, 37, 0.81);
-    color:#a89f9f;
+    background-size: cover;
+    background-image: url("/img/bg.png");
+    background-color: rgba(235, 51, 37, 0.75);
+    color:#dddddd;
     border-top:1px solid #9b9797;
-    border-top-left-radius: 25%;
-    border-top-right-radius: 25%;
-    font-size: 20px;
-    padding: 30px;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    font-size: 14px;
+    padding-top: 10px;
+    height: 30vh;
     text-align: center;
     width: 100vw;
 }
+.footer-left{
+    padding-left: 10%;
+    float:left;
+}
+.footer-right{
+    padding-right: 10%;
+    float: right;
+}
 
+@media( max-width:769px){
+    footer{
+        position: cover;
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-image: url("/img/bgmedia.png");
+        background-color: rgba(235, 51, 37, 0.75);
+        height: 45vh;
+    }
+    hr{
+        display: none;
+    }
+    .text-center{
+        padding-left: 5%;
+    }
+}
 
-/* #60CA98 */

@@ -1,61 +1,47 @@
-<html>
-<head>
-    <title>About</title>
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="icon" href="/img/icon.png">
-    <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kavivanar&family=Podkova&display=swap" rel="stylesheet">
-</head>
-<body>
-    {{>header}}
-    <div class="main-content">
-        <section>
-            <h3>Details about website</h3>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="card mb-3" style="max-width: 70%; margin:10%">
-                            <div class="row no-gutters">
-                                <div class="col-md-4">
-                                    <img src="/img/riyaz.jpg" class="card-img" alt="..." style="height:100%; background-size:contain;">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Developer 1</h5>
-                                        <p class="card-text">Name : {{dev2.dev_name}}</p>
-                                        <p class="card-text">Mobile No : {{dev2.dev_mob_num}}</p>
-                                        <p class="card-text">Location : {{dev2.dev_location}}</p>
-                                        <p class="card-text"><small class="text-muted">Software Engineer</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+{{>header}}
+<div class="jumbotron jumbotron-fluid text" style="background-color: #05A9EB;">
+  <div class="container-fluid">
+  <h1 class="display-6 text-center text-weight-bolder heading">TNblooddonors.com</h1>
+  <p class="text-justify font-weigt-bold" style="font-size:large;">தமிழ்நாடு பிளட் டோனர்ஸ் இந்த இணையதளம் தமிழ்நாட்டிலுள்ள இரத்த தானம் செய்பவர்களின் விபரங்களை ஒருங்கிணைத்து.  அதை இரத்தம் தேவைப்படும் நபருக்கு தேவைப்படும் பிளட் குரூப்பில் அங்கு சுற்றியுள்ள வட்டத்தில் இருக்கிற இரத்த தானம் செய்யக்கூடியவர்களின் விவரங்களை அளித்து இந்த இணையதளம் உதவுகிறது. மற்றும் இந்த இணையதளம் வெறும் சமூக நோக்கத்தோடு மட்டுமே செயல்படுகிறது. இந்த இணையதளத்தின் மாத வரிக்கு சிலரின் உதவிப் பணத்தை வைத்துச் செலுத்துகிறோம். நீங்களும் இந்த இணையதளத்திற்கு மாத வரி கட்டுவதில் உதவி செய்ய விரும்பினால் <a href="/about" style="color: black;"><u>இதை கிளிக் செய்து</u></a> இதில் உள்ள வங்கி விவரங்களைக் கொண்டு உதவி புரியுங்கள் நன்றி.,</p>
+</div>
+</div>
+<div class="jumbotron jumbotron-fluid text" style="color:#ffffff; background-color:#121212;">
+    <h1 class="display-8 text-center text-weight-bold" style="font-size: 15vh; font-family:Lobster;">Developer's</h1>
+</div>
+<div class="container">
+<div class="row">
+    <div class="col-md-12 col-lg-6 mx-auto">
+            <div class="our-team">
+                <div class="picture">
+                    <img class="img-fluid" src="img/riyaz.jpg" alt="Image of Ram Gopal, CEO, Barclays India In LeaderClasses CEO testimonials sections">
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="card mb-3" style="max-width: 70%; margin:10%">
-                            <div class="row no-gutters">
-                                <div class="col-md-4">
-                                    <img src="/img/aashik.jpg" class="card-img" alt="..." style="height:100%;">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Developer 2</h5>
-                                        <p class="card-text">Name : {{dev1.dev_name}}</p>
-                                        <p class="card-text">Mobile No : {{dev1.dev_mob_num}}</p>
-                                        <p class="card-text">Location : {{dev1.dev_location}}</p>
-                                        <p class="card-text"><small class="text-muted">Software Engineer</small></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="team-content">
+                    <h3 class="name">{{dev2.dev_name}}</h3>
+                    <h4 class="title">Software Engineer<br>{{dev2.dev_location}}</h4>
                 </div>
-                
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/profile.php?id=100008581156940" class="fa fa-facebook" aria-hidden="true"></a></li>
+                    <li><a href="https://www.linkedin.com/in/riyaz-ahmed-025606154/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                    <li><a href="https://www.instagram.com/riyaz_suhu/" class="fa fa-instagram" aria-hidden="true"></a></li>
+                </ul>
             </div>
-            
-           
-    {{>footer}}
-</body>
-</html>
+    </div>
+    <div class="col-md-12 col-lg-6 mx-auto">
+            <div class="our-team">
+                <div class="picture">
+                    <img class="img-fluid" src="img/aashik.jpg" alt="Image of Ram Gopal, CEO, Barclays India In LeaderClasses CEO testimonials sections" style="width: 100%;height: auto;">
+                </div>
+                <div class="team-content">
+                    <h3 class="name">{{dev1.dev_name}}</h3>
+                    <h4 class="title">Software Engineer<br>{{dev1.dev_location}}</h4>
+                </div>
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/profile.php?id=100007319835869" class="fa fa-facebook" aria-hidden="true"></a></li>
+                    <li><a href="https://www.linkedin.com/in/muhammad-aashik-9b4230168/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                    <li><a href="https://www.instagram.com/smbdy_cl_me_aashii/" class="fa fa-instagram" aria-hidden="true"></a></li>
+                </ul>
+            </div>
+    </div>
+</div>
+</div>
+{{>footer}}

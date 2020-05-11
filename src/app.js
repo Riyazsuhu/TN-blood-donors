@@ -31,14 +31,14 @@ app.get('/about',(req,res)=>{
     res.render('about',{
         title:'About',
         dev1:{
-            dev_name: 'M.Mohamed asik',
+            dev_name: 'Mohamed asik',
             dev_mob_num: +919080500125,
-            dev_location: 'Needamangalam'
+            dev_location: 'Needamangalam Tamilnadu' 
         },
         dev2:{
-            dev_name: 'H.Riyaz ahmed',
+            dev_name: 'Riyaz ahmed',
             dev_mob_num: +919500665156,
-            dev_location: 'chidhambaram'
+            dev_location: 'Portonovo Tamilnadu'
         }
     })
 })

@@ -29,23 +29,23 @@
         </div>
       </div>
     <section>
-      <form>
+      <form method="POST" action="/donar">
         <div class="jumbotron jumbotron-fluid form">
         <div class="container">
           <p class="text-center font-weight-bold" style="font-size:3vh;">உங்களுக்கு தேவையான இரத்தத்தை தானம் செய்பவரை கண்டுபிடிக்க கீழே உள்ள சரியான விவரங்களை தேர்வுசெய்து <strong>Search</strong> என்னும் பட்டனை கிளிக் செய்யுங்கள்</p>
         </div>
       </div>
         <div class="form-group container jumbotron form">
-          <h1 style="font-weight: bold;" class="text-center">Find Blood Donor's <i class="fas fa-tint"></i></h1>
-          <label for="bld_group">Blood Group : </label>
-          <select name="dnr_bld_group" id="dnr_bld_grp" class="form-control">
-            <option value="bld_grp" selected disabled>Select blood group</option>
+          <h1 style="font-weight: bold;" class="text-center">Find Blood Donar's <i class="fas fa-tint"></i></h1>
+          <label for="bld_grp">Blood Group : </label>
+          <select name="bld_grp" id="dnr_bld_grp" class="form-control" required>
+            <option value="" selected disabled>Select blood group</option>
           </select><br>
           <label for="taluk">Taluk : </label>
-          <select name="taluk" id="dnr_taluk" class="form-control">
-            <option value="select taluk" selected disabled>Select Taluk</option>
+          <select name="taluk" id="dnr_taluk" class="form-control" required>
+            <option value="" selected disabled>Select Taluk</option>
           </select><br>
-          <center><button type="button" class="btn btn-primary btn-lg">Search</button></center>
+          <center><button type="submit" class="btn btn-primary btn-lg">Search</button></center>
         </div>
       </form>
     </section>

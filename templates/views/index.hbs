@@ -29,7 +29,7 @@
         </div>
       </div>
     <section>
-      <form method="POST" action="/donar">
+      <form id="Search-form" method="POST" action="/donardata">
         <div class="jumbotron jumbotron-fluid form">
         <div class="container">
           <p class="text-center font-weight-bold" style="font-size:3vh;">உங்களுக்கு தேவையான இரத்தத்தை தானம் செய்பவரை கண்டுபிடிக்க கீழே உள்ள சரியான விவரங்களை தேர்வுசெய்து <strong>Search</strong> என்னும் பட்டனை கிளிக் செய்யுங்கள்</p>
@@ -45,7 +45,7 @@
           <select name="taluk" id="dnr_taluk" class="form-control" required>
             <option value="" selected disabled>Select Taluk</option>
           </select><br>
-          <center><button type="submit" class="btn btn-primary btn-lg">Search</button></center>
+          <center><button id="Search-button" type="submit" class="btn btn-primary btn-lg">Search</button></center>
         </div>
       </form>
     </section>

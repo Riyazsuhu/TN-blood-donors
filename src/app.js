@@ -2,11 +2,12 @@
 const path=require('path')
 const hbs=require('hbs')
 const bodyParser = require('body-parser')
-const { Pool, Client }= require('pg')
+const { Client }= require('pg')
 const express=require('express')
 const port = process.env.PORT || 3000
 const app=express()
 const connectionString = 'postgressql://postgres:Aashiq@1310@localhost:5432/blood donars'
+const client = new Client({ connectionString: connectionString})
 const log=console.log
 //path setup for external services
 const directory=path.join(__dirname,'../public')
@@ -73,42 +74,24 @@ app.get('API',(req,res)=>{
     res.send('API demo')
 })
 // Inserting donar data
-app.post('/donar/add', (req, res) => {
+app.post('/donarregistration', async (req, res) => {
     const { name, mob_num, bld_grp, taluk} = req.body;
-    const sql = 'INSERT INTO donars (name, mob_num, bld_grp, taluk) VALUES ($1, $2, $3, $4)'
-    const params = [name, mob_num, bld_grp, taluk]
-    const client = new Client({ connectionString: connectionString });
-    client.connect()
-    .then(() => {
-        log("connected successfully"); 
-        return client.query(sql, params);
-    }).then((result) => {
-        log("Data inserted")
-        
-    }).catch((err) => {
-        log('not connected', err)
-    })
+    try {
+        await createDonar(name, mob_num, bld_grp, taluk);
+        res.success=true;  
+    } catch (e) {
+        res.success=false;
+    }
+    
     return res.redirect('/donarregistration');
 })
 //search for donars
-app.post('/donar', (req, res) => {
-    log(req.body)
-    const { bld_grp, taluk} = req.body;
-    const sql= "SELECT name, mob_num, bld_grp, taluk FROM donars  WHERE bld_grp='" + bld_grp + "' AND taluk='" + taluk +"';"
-    const client = new Client({ connectionString});
-    client.connect()
-    .then(() => {
-        log("searching donars")
-        return client.query(sql);
-    })
-    .then((result) => {
-        const data = result.rows
-        log(data)
-        return res.send(data)
-    })
-    .catch((e) => {
-        return res.status(500)
-    })
+app.post('/donardata', async (req, res) => {
+    const {bld_grp, taluk} = req.body;
+    log(bld_grp, taluk)
+    const rows = await searchDonars(bld_grp, taluk);
+    res.setHeader("content-type", "application/json")
+    res.send(JSON.stringify(rows))
     // return res.redirect('/donardata')
 })
 //404 error handliing page
@@ -121,3 +104,47 @@ app.get('*',(req, res)=>{
 app.listen(port,()=>{
     log('Blood donar server is started on port', port)
 })
+//API for backend
+Start()
+async function Start(){
+    await connect();
+    // const listDonar = await listDonars();
+    // console.log(listDonar)
+
+    // const newDonar = await createDonar()
+    // console.log('New donar creation is', newDonar)
+}
+
+async function connect(){
+    try{
+        await client.connect();
+        console.log('connected')
+    }
+    catch(e) {
+        console.log('failed to connect', e)
+    }
+}
+async function listDonars(){
+    try {
+        const result = await client.query("select * from donars")
+        return result.rows
+    } catch (e) {
+        return [];
+    }
+}
+async function createDonar(name, mob_num, bld_grp, taluk){
+    try {
+        await client.query("INSERT INTO donars (name, mob_num, bld_grp, taluk) VALUES ($1, $2, $3, $4)",[name, mob_num, bld_grp, taluk]);
+        return true
+    } catch (e) {
+        return false
+    }
+}
+async function searchDonars(bld_grp, taluk){
+    try {
+        const result = await client.query("select * from donars where bld_grp=($1) and taluk=($2)",[bld_grp, taluk])
+        return result.rows
+    } catch (e) {
+        return [];
+    }
+}

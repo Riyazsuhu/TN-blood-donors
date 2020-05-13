@@ -74,11 +74,11 @@ app.post('/donarregistration', async (req, res) => {
     const { name, mob_num, bld_grp, taluk} = req.body;
     try {
         await createDonar(name, mob_num, bld_grp, taluk);
-        req.send("created") 
+        res.success=true;  
     } catch (e) {
-        res.send("error", e)
+        res.success=false;
     }
-    // return res.redirect('/donarregistration');
+    return res.redirect('/donarregistration');
 })
 //search for donars
 app.post('/donardata', async (req, res) => {

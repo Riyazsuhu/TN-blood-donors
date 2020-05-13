@@ -25,7 +25,7 @@ async function connect(){
 }
 async function listDonars(){
     try {
-        const result = await client.query("select * from donars")
+        const result = await client.query("select * from donors")
         return result.rows
     } catch (e) {
         return [];

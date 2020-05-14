@@ -7,7 +7,7 @@
       <form method="POST" action="/donarregistration">
           <div class="form-group container jumbotron form">
             <h1 style="font-weight:bold;" class="text-center">Donar's registration</h1>
-            <label for="dnr_name">Full name : </label>
+            <label for="name">Full name : </label>
             <input type="text" name="name" required class="form-control" placeholder="Enter your name"><br>
             
             <label for="mobile_no">Mobile No :</label>
@@ -22,6 +22,9 @@
             <select name="taluk" id="dnr_taluk" class="form-control" required>
               <option value="" selected disabled>Select your Taluk</option>
             </select><br>
+
+            <label for="town">Town : </label>
+            <input type="text" name="town" required class="form-control" placeholder="Enter your Town name"><br>
            
             <center><button type="submit" class="btn btn-primary btn-lg text-weight-bold">Submit</button></center>
           </div>

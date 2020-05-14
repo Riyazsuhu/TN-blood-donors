@@ -4,7 +4,7 @@ const hbs=require('hbs')
 const bodyParser = require('body-parser')
 const express=require('express')
 const { createDonar, searchDonars} = require('./utils/server')
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3001
 const app=express()
 const log=console.log
 //path setup for external services
@@ -51,8 +51,8 @@ app.get('/donarregistration',(req,res) =>{
     res.render('donarreg')
 })
 //donar's details route
-app.get('/donardata', (req, res) => {
-    res.render('donardata', {
+app.get('/donordata', (req, res) => {
+    res.render('donordata', {
         dnr1:{
             dnr_name: 'M.Mohamed asik',
             bld_grp: '0+ve',
@@ -71,9 +71,9 @@ app.get('/donardata', (req, res) => {
 //RESTful API to serving data to donars data route
 // Inserting donar data
 app.post('/donarregistration', async (req, res) => {
-    const { name, mob_num, bld_grp, taluk} = req.body;
+    const { name, mob_num, bld_grp, taluk, town} = req.body;
     try {
-        await createDonar(name, mob_num, bld_grp, taluk);
+        await createDonar(name, mob_num, bld_grp, taluk, town); 
         res.success=true;  
     } catch (e) {
         res.success=false;
@@ -81,13 +81,10 @@ app.post('/donarregistration', async (req, res) => {
     return res.redirect('/donarregistration');
 })
 //search for donars
-app.post('/donardata', async (req, res) => {
-    const {bld_grp, taluk} = req.body;
-    log(bld_grp, taluk)
+app.get('/donors', async (req, res) => {
+    const {bld_grp, taluk} = req.query;
     const rows = await searchDonars(bld_grp, taluk);
-    res.setHeader("content-type", "application/json")
-    res.send(JSON.stringify(rows))
-    // return res.redirect('/donardata')
+    res.send(rows)
 })
 //404 error handliing page
 app.get('*',(req, res)=>{

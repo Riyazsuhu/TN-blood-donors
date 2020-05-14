@@ -29,7 +29,7 @@
         </div>
       </div>
     <section>
-      <form id="Search-form" method="POST" action="/donardata">
+      <form>
         <div class="jumbotron jumbotron-fluid form">
         <div class="container">
           <p class="text-center font-weight-bold" style="font-size:3vh;">உங்களுக்கு தேவையான இரத்தத்தை தானம் செய்பவரை கண்டுபிடிக்க கீழே உள்ள சரியான விவரங்களை தேர்வுசெய்து <strong>Search</strong> என்னும் பட்டனை கிளிக் செய்யுங்கள்</p>
@@ -50,6 +50,7 @@
       </form>
     </section>
   </div>
+  <div class="limiter"></div>
   <span id="FAQ"></span>
   <div class="jumbotron jumbotron-fluid text">
     <div class="container">
@@ -181,4 +182,21 @@
   
 
   {{>footer}}
+<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	<script>
+		$('.js-pscroll').each(function(){
+			var ps = new PerfectScrollbar(this);
+
+			$(window).on('resize', function(){
+				ps.update();
+			})
+		});
+	</script>
+<!--===============================================================================================-->
 <script src="/js/main.js"></script>
+<script src="js/table.js"></script>
+<script src="/js/Donordata.js"></script>	
+</body>
+</html>

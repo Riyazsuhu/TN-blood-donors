@@ -144,6 +144,9 @@ iframe {
     width: 500px;
     margin: 0 auto;
   }
+  th,td{
+    font-size: 24px;
+  }
 }
 .container-table100 {
   width: 100%;

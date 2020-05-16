@@ -85,7 +85,7 @@ section{
 	border-radius: 25px;
 }
 .tamil-ans{
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 500;
 }
 .tamil-ans .ul{
@@ -93,7 +93,7 @@ section{
 }
 .dev-heading{
   font-size: 6em;
-  font-family:Lobster;
+  font-family:'Lobster';
 }
 @media(max-width:690px){
   .tamil-ans{
@@ -103,7 +103,7 @@ section{
 }
 .dev-heading{
   font-size: 3em;
-  font-family:Lobster;
+  font-family:'Lobster';
 }
 }
 /* form */

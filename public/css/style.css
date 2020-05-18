@@ -428,7 +428,8 @@ hr{
 .loader {
 	background: #E51C23;
 	z-index: 999999999999999999;
-	position: absolute;
+  position: absolute;
+  top: 0;
   width: 100vw;
   height: 100vh;
   transition: opacity 0.5s ease;

@@ -92,7 +92,11 @@ iframe {
   position: relative;
   overflow: hidden;
 }
-
+@media(max-width:933px){
+  .js-pscroll{
+    padding-top:14px;
+  }
+}
 .table100 .ps__rail-y {
   width: 9px;
   background-color: transparent;
@@ -248,7 +252,7 @@ th, td {
 
 .table100.ver1 td {
   font-family: Lato-Regular;
-  font-size: 1em;
+  font-size: 0.8em;
   color: #808080;
   line-height: 1.4;
 }

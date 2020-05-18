@@ -3,7 +3,7 @@ var input=document.querySelector('#dnr_bld_grp')
 var input1=document.querySelector('#dnr_taluk')
 var table=document.querySelector('.limiter')
 form.addEventListener('submit',(e)=>{
-    e.preventDefault()
+    // e.preventDefault()
     const bld_grp=input.value
     const taluk=input1.value
     fetch('/donors?bld_grp='+ encodeURIComponent(bld_grp)+'&taluk='+encodeURIComponent(taluk)).then((res)=>{

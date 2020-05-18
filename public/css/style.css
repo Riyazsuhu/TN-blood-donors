@@ -88,6 +88,7 @@ section{
 .tamil-ans{
     font-size: 2em;
     font-weight: 500;
+    list-style-image: url(../img/drop.png);
 }
 .tamil-ans .ul{
   margin-left: 20%;

@@ -426,14 +426,15 @@ hr{
 
 /* preloader */
 .loader {
-	background: #E51C23;
-	z-index: 999999999999999999;
   position: fixed;
+	background: #E51C23;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.8s ease;
+  z-index: 999999999999999999;
+  overflow: hidden;
   }
   .loader .container-loader {
 	width: 100px;

@@ -127,10 +127,15 @@ label{
 table{
     border: none;
     font-size: 1.3em;
-    width:80%;
+    width:95%;
     margin: auto;
     align-items: center;
     padding: 5%;
+}
+@media(max-width:441px){
+  table{
+    font-size: 0.8em;
+  }
 }
 /* size */
 h3{
@@ -145,9 +150,9 @@ h6{
 hr{
     color: rgb(195, 71, 49);
 }
-/* .heading{
+.form-heading{
     font-size: 3em;
-} */
+}
 .tamil-ques{
   font-size: 3em;
   font-weight: 700;
@@ -156,7 +161,9 @@ hr{
   .tamil-ques{
     font-size: 2em;
     font-weight: 600;
-
+  }
+  .form-heading{
+    font-size: 1.7em;
   }
 }
 

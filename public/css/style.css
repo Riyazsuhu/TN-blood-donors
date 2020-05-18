@@ -430,10 +430,10 @@ hr{
 	z-index: 999999999999999999;
   position: fixed;
   top: 0;
-  width: 100vw;
-  height: 100vh;
+  bottom: 0;
+  right: 0;
+  left: 0;
   transition: opacity 0.5s ease;
-  overflow: none;
   }
   .loader .container-loader {
 	width: 80px;

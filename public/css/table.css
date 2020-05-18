@@ -94,7 +94,7 @@ iframe {
 }
 @media(max-width:933px){
   .js-pscroll{
-    padding-top:14px;
+    padding-top:20px;
   }
 }
 .table100 .ps__rail-y {
@@ -145,8 +145,8 @@ iframe {
 }
 @media(max-width:690px){
   .limiter{
-    width: 400px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0 40px;
   }
   th,td{
     font-size: 24px;

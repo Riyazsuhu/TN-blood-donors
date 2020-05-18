@@ -436,7 +436,7 @@ hr{
   transition: opacity 0.5s ease;
   }
   .loader .container-loader {
-	width: 80px;
+	width: 100px;
 	height: 100px;
 	margin: 100px auto;
 	margin-top: calc(100vh / 2 - 50px);

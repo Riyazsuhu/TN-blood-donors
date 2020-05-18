@@ -434,14 +434,14 @@ hr{
   transition: opacity 0.5s ease;
   overflow: none;
   }
-  .loader .container {
+  .loader .container-loader {
 	width: 80px;
 	height: 100px;
 	margin: 100px auto;
 	margin-top: calc(100vh / 2 - 50px);
   }
   
-  .loader .container .block {
+  .loader .container-loader .block {
 	position: relative;
 	box-sizing: border-box;
 	float: left;

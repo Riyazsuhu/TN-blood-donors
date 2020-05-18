@@ -427,7 +427,7 @@ hr{
 /* preloader */
 .loader {
 	background: #E51C23;
-	z-index: 5;
+	z-index: 999999999999999999;
 	position: absolute fixed;
   width: 100vw;
   height: 100vh;

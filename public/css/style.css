@@ -1,5 +1,6 @@
 body,html{
     padding-top: 15px;
+    overflow: hidden;
 }
 /* --navbar-- */
 .curve{
@@ -466,5 +467,5 @@ hr{
   }
   .loader-finish{
 	  opacity: 0;
-	  pointer-events: none;
+    pointer-events: none;
   }

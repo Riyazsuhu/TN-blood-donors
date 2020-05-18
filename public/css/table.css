@@ -136,8 +136,8 @@ iframe {
 [ Table ]*/
 
 .limiter {
-  width: 1366px;
-  margin: 0 auto;
+  width: 100vw;
+  margin: 0;
 }
 @media(max-width:690px){
   .limiter{
@@ -165,7 +165,7 @@ iframe {
 }
 
 .wrap-table100 {
-  width: 85%;
+  width: 95%;
 }
 
 /*//////////////////////////////////////////////////////////////////
@@ -185,7 +185,7 @@ th, td {
 
 .column1 {
   width: 33%;
-  padding-left: 2.994%;
+  padding-left: 1.994%;
 }
 
 .column2 {
@@ -239,7 +239,7 @@ th, td {
 
 .table100.ver1 th {
   font-family: Lato-Bold;
-  font-size: 1.347%;
+  font-size: 0.8em;
   color: #fff;
   line-height: 1.4;
 
@@ -248,7 +248,7 @@ th, td {
 
 .table100.ver1 td {
   font-family: Lato-Regular;
-  font-size: 1.122%;
+  font-size: 1em;
   color: #808080;
   line-height: 1.4;
 }

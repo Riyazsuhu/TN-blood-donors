@@ -151,7 +151,6 @@ hr{
 .tamil-ques{
   font-size: 3em;
   font-weight: 700;
-  position: relative;
 }
 @media(max-width:690px){
   .tamil-ques{

@@ -428,12 +428,11 @@ hr{
 .loader {
 	background: #E51C23;
 	z-index: 5;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	transition: opacity 0.5s ease;
+	position: absolute fixed;
+  width: 100vw;
+  height: 100vh;
+  transition: opacity 0.5s ease;
+  overflow: none;
   }
   .container {
 	width: 80px;

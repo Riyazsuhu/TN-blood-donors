@@ -4,14 +4,14 @@ const hbs=require('hbs')
 const bodyParser = require('body-parser')
 const express=require('express')
 const { createDonar, searchDonars} = require('./utils/server')
-const port = process.env.PORT || 3001
+const port = process.env.PORT || 3000
 const app=express()
 const log=console.log
 //path setup for external services
 const directory=path.join(__dirname,'../public')
 const viewsPath=path.join(__dirname,'../templates/views')
 const partialsPath=path.join(__dirname,'../templates/partials')
-//using a static files
+//using a static files  
 app.use(express.static(directory))
 
 app.use(bodyParser.urlencoded({ extended: false}));
@@ -70,16 +70,11 @@ app.get('/donordata', (req, res) => {
 
 //RESTful API to serving data to donars data route
 // Inserting donar data
-app.post('/donarregistration', async (req, res) => {
-    const { name, mob_num, bld_grp, taluk, town} = req.body;
-    try {
-        await createDonar(name, mob_num, bld_grp, taluk, town); 
-        res.success=true;  
-    } catch (e) {
-        res.success=false;
-    }
-    return res.redirect('/donarregistration');
-})
+app.post('/donarregistration',async(req, res) => {
+    const { name, mob_num, bld_grp, taluk, town} = req.body
+    await createDonar(name, mob_num, bld_grp, taluk, town)
+    res.redirect('/donarregistration')
+    })
 //search for donars
 app.get('/donors', async (req, res) => {
     const {bld_grp, taluk} = req.query;
@@ -94,5 +89,5 @@ app.get('*',(req, res)=>{
     })
 })
 app.listen(port,()=>{
-    log('Blood donar server is started on port', port)
+    log('TN Blood donors server is started on port', port)
 })

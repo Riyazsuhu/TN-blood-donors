@@ -1,36 +1,34 @@
 {{>header}}   
-  <div class="jumbotron jumbotron-fluid text" style="color:cornsilk; background-color:#DE3027;">
+<div class="jumbotron jumbotron-fluid text" style="color:cornsilk; background-color:#DE3027;">
   <div class="container">
-  <h1 class="display-8 text-center text-weight-bold">ஒவ்வொருத் துளி இரத்தம் நாம் சேர்ப்போம் ஒருக்கிணைந்து பல உயிர் நாம் காப்போம்...</h1>
+    <h1 class="display-8 text-center text-weight-bold">ஒவ்வொருத் துளி இரத்தம் நாம் சேர்ப்போம் ஒருக்கிணைந்து பல உயிர் நாம் காப்போம்...</h1>
   </div>
+</div>
+<form method="POST" action="/donarregistration">
+  <div class="form-group container jumbotron form">
+    <h1 style="font-weight:bold;" class="text-center">Donor's registration</h1>
+    <label for="name">Full name : </label>
+    <input type="text" name="name" required class="form-control" placeholder="Enter your name">
+    <br>
+    <label for="mob_num">Mobile No :</label>
+    <input type="tel" name="mob_num" required pattern="[0-9]{10}" class="form-control" placeholder="Enter your Mobile no">
+    <br>           
+    <label for="bld_grp">Blood Group : </label>
+    <select name="bld_grp" id="dnr_bld_grp" class="form-control" required>
+      <option value="" selected disabled>Select your blood group</option>
+    </select>
+    <br>      
+    <label for="taluk">Taluk : </label>
+    <select name="taluk" id="dnr_taluk" class="form-control" required>
+      <option value="" selected disabled>Select your Taluk</option>
+    </select>
+    <br>
+    <label for="town">Town : </label>
+    <input type="text" name="town" required class="form-control" placeholder="Enter your Town name">
+    <br>     
+    <center><button type="submit" class="btn btn-primary btn-lg text-weight-bold">Submit</button></center>
   </div>
-      <form method="POST" action="/donarregistration">
-          <div class="form-group container jumbotron form">
-            <h1 style="font-weight:bold;" class="text-center">Donor's registration</h1>
-            <label for="name">Full name : </label>
-            <input type="text" name="name" required class="form-control" placeholder="Enter your name"><br>
-            
-            <label for="mob_num">Mobile No :</label>
-            <input type="tel" name="mob_num" required pattern="[0-9]{10}" class="form-control" placeholder="Enter your Mobile no"><br>
-           
-            <label for="bld_grp">Blood Group : </label>
-            <select name="bld_grp" id="dnr_bld_grp" class="form-control" required>
-              <option value="" selected disabled>Select your blood group</option>
-            </select><br>
-           
-            <label for="taluk">Taluk : </label>
-            <select name="taluk" id="dnr_taluk" class="form-control" required>
-              <option value="" selected disabled>Select your Taluk</option>
-            </select><br>
-
-            <label for="town">Town : </label>
-            <input type="text" name="town" required class="form-control" placeholder="Enter your Town name"><br>
-           
-            <center><button type="submit" class="btn btn-primary btn-lg text-weight-bold">Submit</button></center>
-          </div>
-      </form>
-    {{>footer}}
-    <script src="/js/ajax.js"></script>
-    <script src="/js/main.js"></script>
-</body>
-</html>
+</form>
+{{>footer}}
+<script src="/js/ajax.js"></script>
+<script src="/js/main.js"></script>

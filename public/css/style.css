@@ -91,7 +91,6 @@ section{
 }
 .tamil-ans .ul{
   margin-left: 20%;
-  list-style: url(../img/drop.png);
 }
 .dev-heading{
   font-size: 6em;
@@ -268,7 +267,7 @@ hr{
 {
   padding-left:0;
   margin-bottom:0;
-  list-style:none
+  list-style:none;
 }
 .social-icons li
 {

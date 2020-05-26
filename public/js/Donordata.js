@@ -5,9 +5,9 @@ var table=document.querySelector('.limiter')
 var scrollDown = document.querySelector('.Scroll-down')
 form.addEventListener('submit',(e)=>{
     e.preventDefault()
-    table.innerHTML = ""
+    table.innerHTML = "Scroll-down"
     // scrollDown.classList.add("result-text")
-    scrollDown.innerHTML = "<h2>SCROLL-DOWN</h2>"
+    scrollDown.innerHTML = "SCROLL-DOWN"
     const bld_grp=input.value
     const taluk=input1.value
     fetch('/donors?bld_grp='+ encodeURIComponent(bld_grp)+'&taluk='+encodeURIComponent(taluk)).then((res)=>{

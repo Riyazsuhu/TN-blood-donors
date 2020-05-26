@@ -479,6 +479,7 @@ hr{
   .result-text{
     width: 300px;
     height: 300px;
+    margin: 0 auto;
     align-content: center;
     justify-content: center;
     font-size: 30px;

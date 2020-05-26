@@ -475,3 +475,10 @@ hr{
 	  opacity: 0;
     pointer-events: none;
   }
+
+  .result-text{
+    width: 100%;
+    height: auto;
+    align-content: center;
+    justify-content: center;
+  }

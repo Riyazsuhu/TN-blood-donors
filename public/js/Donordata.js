@@ -6,7 +6,7 @@ var scrollDown = document.querySelector('.Scroll-down')
 form.addEventListener('submit',(e)=>{
     e.preventDefault()
     table.innerHTML = ""
-    scrollDown.classList.add("result-text")
+    // scrollDown.classList.add("result-text")
     scrollDown.innerHTML = "<h2>SCROLL-DOWN</h2>"
     const bld_grp=input.value
     const taluk=input1.value

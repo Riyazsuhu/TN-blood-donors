@@ -1,8 +1,10 @@
 const { Client } = require('pg')
-const connectionString = 'postgres://eqsewrxknjnjup:3bc0811484fe88b03797d5f845160ed663f503792c6c52298d12579da399fb2f@ec2-3-231-16-122.compute-1.amazonaws.com:5432/d5sr5fpoj7mub'
+// const connectionString = 'postgres://eqsewrxknjnjup:3bc0811484fe88b03797d5f845160ed663f503792c6c52298d12579da399fb2f@ec2-3-231-16-122.compute-1.amazonaws.com:5432/d5sr5fpoj7mub'
 // const connectionString = 'postgressql://postgres:alhamdulillah@localhost:5432/blood donors'
-// const connectionString = 'postgressql://postgres1:Aashiq@1310@localhost:5432/blood donars'
-const client = new Client({ connectionString: connectionString}) 
+// const connectionString = 'postgressql://postgres:Aashiq@1310@localhost:5432/blood donars'
+const client = new Client({ 
+    connectionString: process.env.DATABASE_URL
+}) 
 async function connect(){
     try{
         await client.connect();

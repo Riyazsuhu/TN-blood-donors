@@ -1,10 +1,11 @@
 //using library for our project
+require('dotenv').config()
 const path=require('path')
 const hbs=require('hbs')
 const bodyParser = require('body-parser')
 const express=require('express')
 const { createDonar, searchDonars} = require('./utils/server')
-const port = process.env.PORT || 3000
+const port = process.env.PORT
 const app=express()
 const log=console.log
 //path setup for external services

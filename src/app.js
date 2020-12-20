@@ -14,7 +14,7 @@ const viewsPath=path.join(__dirname,'../templates/views')
 const partialsPath=path.join(__dirname,'../templates/partials')
 //using a static files  
 app.use(express.static(directory))
-
+//parser updation
 app.use(bodyParser.urlencoded({ extended: false}));
 //setup using hbs files
 app.set('view engine','hbs')
